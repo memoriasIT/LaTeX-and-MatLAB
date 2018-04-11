@@ -5,7 +5,7 @@
 % Pasar a matrices de forma
 % Z* = M * A
 % 
-% Como no tenemos frecuencias absolutas sabemos que la ecuación normal es:
+% Como no tenemos frecuencias absolutas sabemos que la ecuaciÃ³n normal es:
 % M^tMA = M^tZ
 % 
 % M^t*M = C
@@ -32,7 +32,7 @@ C = M' * M;
 B = M' * Z;
 %solucionamos sitema
 sol = C\B;
-%abc son los componentes de la ecuación
+%abc son los componentes de la ecuaciÃ³n
 a = sol(1);
 b = sol(2);
 c = sol(3);
@@ -48,7 +48,7 @@ Zest = a+b*X + c*X.*Y;
 error = Z- Zest;
 %Comando para calcular varianza var(datos)
 % Como no tenemos frecuencia bsoluta Var(Z, 1)
-% si tenemos frecuencia absoluta se pondría el vector donde el 1
+% si tenemos frecuencia absoluta se pondrÃ­a el vector donde el 1
 VarZ = var(Z, 1);
 Varesidual = var(error, 1);
 R2 = 1 - Varesidual/VarZ;

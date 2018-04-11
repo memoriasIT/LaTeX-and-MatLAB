@@ -40,7 +40,7 @@ L = find ((XX > Lmin) & (XX < Lmax));
 length(L);
 Y = XX(L);
 
-%Gráfica con los elementos no anomalos
+%GrÃ¡fica con los elementos no anomalos
 %figure(1), plot(Y);
 
 % Calcular media y varianza sin funciones

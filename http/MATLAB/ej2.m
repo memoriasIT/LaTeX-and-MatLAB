@@ -86,7 +86,7 @@ mediaX = Sx/N;
 
 %Hay que calcular curtosis, varianza, etc.
 
-%Desviación media
+%DesviaciÃ³n media
 %desviacion de cada valor con respecto a la media y ....
 %valor absoluto de x - m1
 absd = abs(x - mediaX);

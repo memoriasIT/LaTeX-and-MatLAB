@@ -13,7 +13,7 @@
 %primero ponemos la misma amplitud enlos elementos con infinito es decir 
 %hasta el -8
 
-% despuÈs ponemos las marcas de clase que usamos en vez de los intervalos
+% despu√©s ponemos las marcas de clase que usamos en vez de los intervalos
 %elementos con 0 no ponemos
 %_X_ _Y_ _N_
 % -6  3   25
@@ -59,13 +59,13 @@ error = Y-Yest;
 Varesidual = var(error, n);
 
 % en el caso lineal r^2 = R^2
-% r = *aquÌ signo de b (pendiente)* sqrt(R^2)
+% r = *aqu√≠ signo de b (pendiente)* sqrt(R^2)
 
 VarY = var(Y, n);
 R2 = 1- Varesidual/VarY;
 r = -sqrt(R2);
-% el ajuste est· bien porque es proximo a -1 o 1
-% Si el r est· fuera del intervalo [-1, 1] est· mal
+% el ajuste est√° bien porque es proximo a -1 o 1
+% Si el r est√° fuera del intervalo [-1, 1] est√° mal
 % 0 < R2 < 1 pero puede ser fuera del intervalo aunque es malo el ajsute
 
 %Para calcular X/Y entonces hay que cambiar la matriz 
@@ -114,7 +114,7 @@ R2 = 1- Varesidual/VarY;
 %log2(x)
 %para calcular logaritmo de base b hay que hacer log(x)/log(b)
 
-% Hacer de nuevo el ejercicio pero con la restricciÛn Y/x_>0
+% Hacer de nuevo el ejercicio pero con la restricci√≥n Y/x_>0
 % Hacer la tabla de nuevo
 
 % Y/X_>0      N
@@ -126,8 +126,8 @@ Ycondi = [0 1 2];
 ncondi = [14+23+50 12+7+1 6+2,];
 Ncondi = sum(ncondi);
 
-%Se podrÌa hacer con el comando mean() pero como tenemos frecuencias
-%absolutas no podemos ahcerlo asÌ sino que tenemos que hacer lo con
+%Se podr√≠a hacer con el comando mean() pero como tenemos frecuencias
+%absolutas no podemos ahcerlo as√≠ sino que tenemos que hacer lo con
 %sumatorio
 
 media = sum(ncondi.*Ycondi)/Ncondi;

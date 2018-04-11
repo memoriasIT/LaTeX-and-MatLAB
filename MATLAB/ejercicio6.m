@@ -11,10 +11,10 @@
 %a) moda
 % b) entropia
 % c) en un pais se estudia establecer una modalidad XL que debe contener 
-% al 5% más grande ¿Dónde debe ponerse el limite?
+% al 5% mÃ¡s grande Â¿DÃ³nde debe ponerse el limite?
 
 % Para calcular la moda como la amplitud es distinta tenemos que calcular
-% las alturas y el elemento con más altura será el intervalo modal
+% las alturas y el elemento con mÃ¡s altura serÃ¡ el intervalo modal
 
 % Mo = Li-1 + ai * hi/(h1 + h2
 % h1 = hi - hi-1
@@ -42,7 +42,7 @@ Mo = Li(ind) + a(ind)*h1/(h1+h2);
 
 %Para calcular la entropia -sum(fi*log(fi))
 % base del logaritmo es el numero de intervalos que tenemos en este caso
-% hay 6 intervalos así que logaritmo de base 6
+% hay 6 intervalos asÃ­ que logaritmo de base 6
 % para pasar usamos log6f = log(f) / log(6)
 
 %f es frecuencia relativa
@@ -54,10 +54,10 @@ Entropia = -sum(f.*log6f);
 
 % Podemos calcular cuantiles Q1, Q2...
 % Q1 = Li-1 + ai * (N/4 - Ni-1)/ni
-% tenemos que saber en que intervalo está por eso usamos el comando
+% tenemos que saber en que intervalo estÃ¡ por eso usamos el comando
 % cumsum() entonces tenemos Ni = cumsum(n)
-% el primero que se pase de 1/4 de N será el que buscamos 
-% usamos el comando find() que te dice en que posición está lo que queremos
+% el primero que se pase de 1/4 de N serÃ¡ el que buscamos 
+% usamos el comando find() que te dice en que posiciÃ³n estÃ¡ lo que queremos
 % find(nacum > N/4)
 % ind = P(1)
 

@@ -22,7 +22,7 @@ poisspdf(0:7,3); %Probabilidad de sacar 1, 2, 3... 7.
 %Como es funcion de distribucion igual pero cdf
 poisscdf(7,3);
 
-%% 3) Generar 10 nº aleatorios de:
+%% 3) Generar 10 nÂº aleatorios de:
 %% E(5)
 %Exponencial de parametro 5, 10 elementos en array de 1x10
 exprnd(5, 1,10);
@@ -44,8 +44,8 @@ norminv(0.003,3,5);
 % P [X>=b] = 0.75
 % X --> B(8, 0.35)
 % Calculamos lo contrario es decir que:
-% P[X <= b] = 1 - 0.75 = 0.25 y esto ya esta según la función de
-% distribución
+% P[X <= b] = 1 - 0.75 = 0.25 y esto ya esta segÃºn la funciÃ³n de
+% distribuciÃ³n
 
 chi2inv(0.25, 8);
 
@@ -63,24 +63,24 @@ chi2inv(0.25, 8);
 % y sera uniforme de 0 a 10
 
 % Calculamos la distancia entre dos puntos con la raiz cuadrada
-% Distancia entre antena y punto, si es <= 3 entonces estará dentro del
+% Distancia entre antena y punto, si es <= 3 entonces estarÃ¡ dentro del
 % rango si no no.
 
-% Tendremos array (1x10k) de 10k elementos con 1 o 0 según si está dentro o no del
+% Tendremos array (1x10k) de 10k elementos con 1 o 0 segÃºn si estÃ¡ dentro o no del
 % intervalo
 
-% Tendremos un array para cada antena y podremos calcular una proporción
+% Tendremos un array para cada antena y podremos calcular una proporciÃ³n
 % con todo esto.
 
 NIT = 10000;
 % Para generar valores en intervalo debe de ser continua usamos unifrnd
-% Desde 0 hasta 20, tamaño del array 1x10k
+% Desde 0 hasta 20, tamaÃ±o del array 1x10k
 x = unifrnd(0, 20, 1, NIT);
 y = unifrnd(0, 10, 1, NIT);
 
 % Calculamos raiz cuadrada para distancia hasta primera antena
 d1 = sqrt((x-(-1)).^2+(y-5).^2);
-% Array lógico 1s y 0s segun si se cumple la condición
+% Array lÃ³gico 1s y 0s segun si se cumple la condiciÃ³n
 c1 = (d1<=3);
 
 %2a antena: 5, 4
@@ -161,7 +161,7 @@ NR= sum(Condicion);
 % Con lo de abajo conseguimos la cobertura de alguna antena
 % Calculamos raiz cuadrada para distancia hasta primera antena
 d1 = sqrt((x-(-1)).^2+(y-5).^2);
-% Array lógico 1s y 0s segun si se cumple la condición
+% Array lÃ³gico 1s y 0s segun si se cumple la condiciÃ³n
 c1 = (d1<=3);
 
 %2a antena: 5, 4
@@ -204,7 +204,7 @@ Pobl = 25000*p;
 % Te dan la probabilidad y calculas el T0
 %Numero de iteraciones
 Nit=1e5;
-% Calculamos 10k numeros con distribución de Poisson, parametro te lo dan
+% Calculamos 10k numeros con distribuciÃ³n de Poisson, parametro te lo dan
 n1=poissrnd(7.77,Nit,1);
 n2=poissrnd(2.13,Nit,1);
 n=n1+n2;
@@ -213,8 +213,8 @@ n=n1+n2;
 med=mean(n);
 V=var(n); % Cuasivarianza (mejor estimador del valor correcto)
 
-% Para calcular que sean mayor de 10 hacemos una condición esto creará un
-% array con 0s y 1s según si se cumple la condicición
+% Para calcular que sean mayor de 10 hacemos una condiciÃ³n esto crearÃ¡ un
+% array con 0s y 1s segÃºn si se cumple la condiciciÃ³n
 c=(n>10);
 
 P=sum(c)/Nit; %Estimador puntual

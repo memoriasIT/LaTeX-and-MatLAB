@@ -26,7 +26,7 @@ F = poisscdf(3,5);
 x = norminv(0.0037, 4,3); %% = -1.359840096480411
 x = norminv(0.975, 4, 3); %% Como queremos que de mayor que 1 pues hacemos 1-0.037
 
-%% Simulación de sucesos
+%% SimulaciÃ³n de sucesos
 unidrnd(6,2,1); %% Lanzamiento de dos dados
 
 binopdf(0:4, 4, 0.6); %%repito el experimento 4 veces con 0.6 de probabilidad
@@ -58,13 +58,13 @@ p = cont/NIT;
 
 
 % El tiempo que se tarda en llegar a TEATINOS en metro se compone de el tiempo de llegada del tren ?1
-% m´as el del recorrido ?2, donde ?1 sigue una uniforme en [0,15], mientras que ?2 sigue una normal de media
-% 15 minutos y 3 de desviaci´on. Hallar mediante simulaci´on (10000 iteraciones) los apartados a y b:
-% (a) La probabilidad de tardar m´as de 25 min.
-% (b) La probabilidad de tardar m´as que un autob´us que pasa en ese momento por la parada del metro y
-% cuya duraci´on del trayecto sigue una normal de media 26 min. con desviaci´on de 5 min.
-% (c) Queremos contrastar que la duraci´on del trayecto del metro es en realidad superior a 15 minutos, (sin
-% fiarnos tampoco de que la desviaci´on sea 3) para ello medimos durante 14 d´?as el tiempo del trayecto
+% mÂ´as el del recorrido ?2, donde ?1 sigue una uniforme en [0,15], mientras que ?2 sigue una normal de media
+% 15 minutos y 3 de desviaciÂ´on. Hallar mediante simulaciÂ´on (10000 iteraciones) los apartados a y b:
+% (a) La probabilidad de tardar mÂ´as de 25 min.
+% (b) La probabilidad de tardar mÂ´as que un autobÂ´us que pasa en ese momento por la parada del metro y
+% cuya duraciÂ´on del trayecto sigue una normal de media 26 min. con desviaciÂ´on de 5 min.
+% (c) Queremos contrastar que la duraciÂ´on del trayecto del metro es en realidad superior a 15 minutos, (sin
+% fiarnos tampoco de que la desviaciÂ´on sea 3) para ello medimos durante 14 dÂ´?as el tiempo del trayecto
 % obteniendo los tiempos 14, 16, 18, 14, 17, 15, 15, 16, 14, 19, 17, 16, 16, 15. Hacer el contraste al nivel
 % del 5%
 
@@ -81,7 +81,7 @@ p=conta/NIT;
 
 %%b)
 
-% a) Estimar, mediante el m´etodo de Montecarlo con 10000 iteraciones, la probabilidad de que al sumar
+% a) Estimar, mediante el mÂ´etodo de Montecarlo con 10000 iteraciones, la probabilidad de que al sumar
 % los valores absolutos de 10 variables aleatorias ?i que siguen una N(0,2), se obtenga un valor mayor que 30
 % P(Sum0-10 epsilon > 30)
 % b) Hallar el intervalo de confianza al 95 % para esta probabilidad.
@@ -96,12 +96,12 @@ end
 conta;
 p=conta/NIT;
 
-% Una compa˜n´?a considera que en una provincia tiene 62000 posibles clientes. Como campa˜na de introducci´on
+% Una compaËœnÂ´?a considera que en una provincia tiene 62000 posibles clientes. Como campaËœna de introducciÂ´on
 % ofrece un servicio gratuito durante los 6 primeros meses a 2000 de ellos, estimando que el 12% de
-% ellos continuar´an recibi´endolo una vez pasado el periodo gratuito. Para los 60000 restantes, estima que la
+% ellos continuarÂ´an recibiÂ´endolo una vez pasado el periodo gratuito. Para los 60000 restantes, estima que la
 % probabilidad de que lo contrate es del 0.3%.
-% Estimar mediante el m´etodo de Montecarlo, con 10.000 iteraciones.
-% (a) La media y varianza del n´umero de clientes que contratan el servicio (?):
+% Estimar mediante el mÂ´etodo de Montecarlo, con 10.000 iteraciones.
+% (a) La media y varianza del nÂ´umero de clientes que contratan el servicio (?):
 % ? = ?1 + ?2 ? B(2000, 0.12) + B(60000, 0.003)
 % (b) Si la empresa necesita, al menos, 300 clientes para ser viable. Dar un intervalo de confianza al 95%
 % para la probabilidad de que ? sea mayor o igual a 300. (P(? ? 300) )

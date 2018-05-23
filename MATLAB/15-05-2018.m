@@ -3,7 +3,7 @@ format long
 
 binopdf(3,26,0.4)
 binopdf(0:10,10,0.4)
-binornd(10,0.4,15,1) %Saca sobre todo los numeros con m·s probabilidad 
+binornd(10,0.4,15,1) %Saca sobre todo los numeros con m√°s probabilidad 
                      %(3,4,5) sobre todo
 
 %%% a)Calcular P[X=0], P[X=1]... p[X=30] en B(30,0.56) y comprobar que la suma vale 1

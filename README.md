@@ -35,6 +35,9 @@ Use something like exiftool to get the metadata of the image, you'll find someth
 <code> http://masterucam.pythonanywhere.com/play_music?user=$YourUsername&access_token=$YourToken </code>
 
 Copy and paste it into your browser.
+
+<h3> 3ND - The Music File </h3>
+
 It is obviously showing your user-agent.
 "Yo solo dejo pasar al AUTOR (no intérprete) de esta canción" gives you a hint for this one. 
 I tried to get some metadata again, but no chance, the data you get won't be usefull at all. You have to get a reverse music search like Shazam and scan the music.
